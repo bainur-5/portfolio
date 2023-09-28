@@ -1,0 +1,283 @@
+* {
+    box-sizing: content-box;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0B0C10;
+}
+
+.start_section {
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+
+}
+
+.start_title {
+    margin-bottom: 8rem;
+}
+
+.start_title h1 {
+    font-size: 5rem;
+    margin: 0;
+    /* color: #66FCF1; */
+    /* color: rgb(0, 212, 255,); */
+    /* color: #3cffd2; */
+    color: rgb(60, 255, 210);
+    text-shadow: 0 0 10px #3cffd2;
+
+}
+
+.start_title p {
+    font-size: 2.5rem;
+    margin-bottom: 0;
+    color: #C5C6C7;
+}
+
+.container_cube {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+    position: relative;
+}
+
+.cube {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    border-radius: 500rem;
+    transform-style: preserve-3d;
+    transform: perspective(900px) rotateX(10deg) rotateY(10deg);
+    transition: transform 1.5s;
+    animation: rotateCube 10s linear infinite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ... остальной CSS код остается без изменений */
+.face {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    background: linear-gradient(rgba(60, 255, 210, 0.9), rgba(0, 212, 255, 0.9));
+    /* Градиентный фон для свечения по центру */
+    border: 1px solid #eeeeee;
+    box-shadow: 0 0 30px rgba(0, 212, 255, 0.9);
+    /* backface-visibility: hidden; */
+}
+
+.shadow_cube {
+    width: 200px;
+    /* Такой же размер, как и .cube */
+    height: 20px;
+    /* Высота тени */
+    background-color: #0b0c1000;
+    position: absolute;
+    bottom: 0;
+    left: 27%;
+    right: 0;
+    top: 150px;
+    /* Располагаем тень под .cube */
+    box-shadow: 0px 200px 100px rgb(0, 212, 255, 0.9);
+    /* Убрал сдвиги по X и Y и увеличил размытие */
+}
+
+
+.front {
+    transform: rotateY(0deg) translateZ(100px);
+    box-shadow: 0 0 50px rgba(0, 212, 255, 0.9);
+}
+
+.back {
+    transform: rotateY(180deg) translateZ(100px);
+}
+
+.left {
+    transform: rotateY(-90deg) translateZ(100px);
+}
+
+.right {
+    transform: rotateY(90deg) translateZ(100px);
+}
+
+.top {
+    transform: rotateX(90deg) translateZ(100px);
+}
+
+.bottom {
+    transform: rotateX(-90deg) translateZ(100px);
+}
+
+/* About */
+
+.about_section {
+    padding: 2rem 0;
+}
+
+.about_title {
+    width: 70%;
+    margin: auto;
+    padding: 5rem 0;
+}
+
+.about_title h1 {
+    font-size: 4rem;
+    margin-top: 0;
+    color: rgb(60, 255, 210);
+    text-align: center;
+}
+
+.about_title p {
+    font-size: 2rem;
+    margin: 0;
+    color: #C5C6C7;
+}
+
+/* skils */
+.my_initial_skil{
+    width: 100%;
+    padding: 2rem 0;
+    margin-bottom: 5rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+.cube_1skil {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    border-radius: 00rem;
+    transform-style: preserve-3d;
+    transform: perspective(900px) rotateX(10deg) rotateY(10deg);
+    transition: transform 1.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    background-image: url(../img/JavaScript-Logo.png) ;
+}
+
+.face_1skil {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    background: linear-gradient(rgba(60, 255, 210, 0.9), rgba(0, 212, 255, 0.9));
+    /* Градиентный фон для свечения по центру */
+    border: 1px solid #eeeeee;
+    box-shadow: 0 0 30px rgba(0, 212, 255, 0.9);
+    /* backface-visibility: hidden; */
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+.front_1skil_img img{
+    width: 175%;
+    height: 100%;
+}
+.front_2skil_img img{
+    width: 175%;
+    height: 120%;
+}
+.front_3skil_img img{
+    width: 150%;
+    height: 100%;
+}
+.front_1skil {
+    transform: rotateY(0deg) translateZ(50px);
+    box-shadow: 0 0 50px rgba(0, 212, 255, 0.9);
+    background-image: url(../img/JavaScript-Logo.png) ;
+    /* background: url('../img/antd_log.png') center cover/no-repeat !important; */
+    /* background-color: red; */
+}
+
+.back_1skil {
+    transform: rotateY(180deg) translateZ(50px);
+}
+
+.left_1skil {
+    transform: rotateY(-90deg) translateZ(50px);
+}
+
+.right_1skil {
+    transform: rotateY(90deg) translateZ(50px);
+}
+
+.top_1skil {
+    transform: rotateX(90deg) translateZ(50px);
+}
+
+.bottom_1skil {
+    transform: rotateX(-90deg) translateZ(50px);
+}
+/*  */
+.my_subsequent_skills{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+/* js skil */
+.my_subsequent_skills_js{
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+    height: fit-content;
+}
+.cube_skil_container{
+    display: flex; 
+    gap: 2rem;
+    min-height: 100px;
+    height: fit-content;
+}
+.front_skil_js_img img{
+    color: #0B0C10;
+    width: 95%;
+    height: 100%;
+}
+.flex_skil{
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+}
+.grid_skil{
+    display: grid;
+    gap: 3rem;
+}
+.time_skil {
+    text-align: start;
+    font-size: 1rem;
+    margin: auto 0;
+    color: #C5C6C7;
+}
+/*  */
+
+@keyframes rotateCube {
+    0% {
+        transform: perspective(900px) rotateX(0deg) rotateY(0deg);
+    }
+
+    100% {
+        transform: perspective(900px) rotateX(360deg) rotateY(360deg);
+    }
+}
