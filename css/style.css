@@ -149,13 +149,14 @@ body {
 }
 
 /* skils */
-.my_initial_skil{
+.my_initial_skil {
     width: 100%;
     padding: 2rem 0;
     margin-bottom: 5rem;
     display: flex;
     justify-content: space-evenly;
 }
+
 .cube_1skil {
     width: 100px;
     height: 100px;
@@ -167,9 +168,13 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0;
+    margin: auto;
     padding: 0;
-    background-image: url(../img/JavaScript-Logo.png) ;
+    background-image: url(../img/JavaScript-Logo.png);
+}
+
+.cube_1skil_main {
+    margin-bottom: 2rem;
 }
 
 .face_1skil {
@@ -190,22 +195,25 @@ body {
     padding: 0;
     border: none;
 }
-.front_1skil_img img{
+
+.front_1skil_img img {
     width: 175%;
     height: 100%;
 }
-.front_2skil_img img{
+
+.front_2skil_img img {
     width: 175%;
     height: 120%;
 }
-.front_3skil_img img{
+
+.front_3skil_img img {
     width: 150%;
     height: 100%;
 }
+
 .front_1skil {
     transform: rotateY(0deg) translateZ(50px);
     box-shadow: 0 0 50px rgba(0, 212, 255, 0.9);
-    background-image: url(../img/JavaScript-Logo.png) ;
     /* background: url('../img/antd_log.png') center cover/no-repeat !important; */
     /* background-color: red; */
 }
@@ -229,48 +237,256 @@ body {
 .bottom_1skil {
     transform: rotateX(-90deg) translateZ(50px);
 }
+
 /*  */
-.my_subsequent_skills{
+.my_subsequent_skills {
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
+    gap: 2rem;
 }
+
 /* js skil */
-.my_subsequent_skills_js{
+.my_subsequent_skills_js,
+.my_subsequent_skills_css,
+.my_subsequent_skills_html {
     display: grid;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     gap: 3rem;
     height: fit-content;
 }
-.cube_skil_container{
-    display: flex; 
+
+.cube_skil_container {
+    display: grid;
     gap: 2rem;
     min-height: 100px;
     height: fit-content;
+    position: relative;
 }
-.front_skil_js_img img{
-    color: #0B0C10;
+
+.cube_skil_separt_container {
+    display: grid;
+    gap: 2rem;
+    min-height: 100px;
+    height: fit-content;
+    margin-top: 10rem;
+
+}
+
+.line:after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 100px;
+    background-color: rgb(0, 212, 255, 0.5);
+    top: -60px;
+    left: 50px;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: -3;
+}
+
+.line_left:after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 7rem;
+    background-color: rgb(0, 212, 255, 0.5);
+    top: -60px;
+    left: 50px;
+    transform: rotate(40deg) translateX(-50%) translateY(-50%);
+    z-index: -3;
+}
+
+.line_right:after {
+    content: "";
+    position: absolute;
+    border-top-right-radius: 50%;
+    width: 10px;
+    height: 7rem;
+    background-color: rgb(0, 212, 255, 0.5);
+    top: -60px;
+    left: 50px;
+    transform: rotate(-40deg) translateX(-50%) translateY(-50%);
+    z-index: -3;
+}
+
+.front_skil_js_img img {
     width: 95%;
-    height: 100%;
+    height: 97%;
 }
-.flex_skil{
+
+.front_skil_fig_img img {
+    width: 75%;
+    height: 95%;
+}
+
+.front_skil_git_img img {
+    width: 120%;
+    height: 95%;
+}
+
+.front_skil_nod-fire_img img {
+    color: #0B0C10;
+    width: 80%;
+    height: 95%;
+
+}
+
+.flex_skil {
     display: flex;
     justify-content: space-between;
     gap: 3rem;
 }
-.grid_skil{
+
+.grid_skil {
     display: grid;
     gap: 3rem;
 }
+
 .time_skil {
     text-align: start;
     font-size: 1rem;
     margin: auto 0;
     color: #C5C6C7;
+    z-index: 4;
 }
-/*  */
+
+/* проекты */
+
+.project_Container {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    transition: .5s;
+    transform: skewY(-2.5deg);
+}
+
+.project_card {
+    position: relative;
+    width: 200px;
+    height: 300px;
+    transition: .5s;
+}
+
+.project_card::before {
+    content: "";
+    position: absolute;
+    top: -14px;
+    width: 100%;
+    height: 15px;
+    background-color: rgba(0, 212, 255, 0.9);
+    transform-origin: bottom;
+    transform: skewX(45deg);
+    transition: .5s;
+}
+
+.project_card::after {
+    content: "";
+    position: absolute;
+    top: -14px;
+    left: -14px;
+    width: 15px;
+    height: 350px;
+    background-color: rgba(0, 212, 255, 0.9);
+    transform-origin: left;
+    transform: skewY(45deg);
+    transition: .5s;
+}
+
+.progect_title {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(0deg, rgba(60, 255, 210, 0.9), rgba(0, 212, 255, 0.9));
+    z-index: 1;
+}
+
+.progect_title p {
+    font-size: large;
+    padding: 0 2rem;
+    color: #0B0C10;
+}
+
+.progect_content {
+    position: relative;
+    width: 100%;
+    height: 250px;
+    background: rgba(60, 255, 210, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: -1;
+}
+
+.progect_content::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    width: 100%;
+    height: 10px;
+    background: linear-gradient(transparent,rgba(0, 212, 255, 0.9));
+    transform-origin: bottom;
+    transform: skewX(45deg);
+    transition: .5s;
+    z-index: -1;
+}
+.progect_content::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 10px;
+    /* background-color: red; */
+    transform: translateY(-5px);
+    z-index: 3;
+    background: rgba(60, 255, 210, 0.11);
+
+}
+/* .project_card:hover .progect_content:before 
+{
+    transform: translateY(-40px) skewX(45deg);
+    filter: blur(5px);
+    opacity: 0.5;
+} */
+.project_card:hover {
+    transform: translateY(-30px); /* Поднимаем карту на 10 пикселей */}
+.progect_content:hover::before{
+    height: 40px;
+    bottom: -40px;
+    filter: blur(5px);
+    opacity: 0.5;
+}
+.project_card:nth-child(1) {
+    z-index: 3;
+}
+
+.project_card:nth-child(2) {
+    z-index: 2;
+}
+
+.project_card:nth-child(3) {
+    z-index: 1;
+}
+.website_card{
+    width: 95%;
+    height: 200px;
+    background-color: #C5C6C7;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.progect_content h1 {
+    color: #45A29E;
+    font-size: 2rem;
+
+}
 
 @keyframes rotateCube {
     0% {
