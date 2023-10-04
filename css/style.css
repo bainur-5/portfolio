@@ -365,35 +365,38 @@ body {
 
 .project_card {
     position: relative;
-    width: 200px;
-    height: 300px;
+    transform: perspective(1000px) rotate(-30deg) skew(25deg) translate(0,0);
     transition: .5s;
+    transition-timing-function: linear;
+    box-shadow: -40px 40px 10px rgba(0, 212, 255, 0.9);
+    background: linear-gradient(rgba(60, 255, 210, 0.9), rgba(0, 212, 255, 0.9));
 }
 
-.project_card::before {
+ .project_card::before {
     content: "";
     position: absolute;
-    top: -14px;
-    width: 100%;
-    height: 15px;
-    background-color: rgba(0, 212, 255, 0.9);
+    top: 10px;
+    left: -20px;
+    width:  20px;
+    height: 100%;
+    background: linear-gradient(rgba(60, 255, 210, 0.9), rgba(0, 212, 255, 0.9));
     transform-origin: bottom;
-    transform: skewX(45deg);
+    transform: rotate(0) skewY(-45deg);
     transition: .5s;
 }
 
 .project_card::after {
     content: "";
     position: absolute;
-    top: -14px;
-    left: -14px;
-    width: 15px;
-    height: 350px;
-    background-color: rgba(0, 212, 255, 0.9);
+    bottom: -20px;
+    left: -10px;
+    width: 100%;
+    height: 20px;
+    background: linear-gradient(rgba(60, 255, 210, 0.9), rgba(0, 212, 255, 0.9));
     transform-origin: left;
-    transform: skewY(45deg);
+    transform: rotate(0) skewX(-45deg);
     transition: .5s;
-}
+} 
 
 .progect_title {
     width: 100%;
@@ -415,53 +418,22 @@ body {
     position: relative;
     width: 100%;
     height: 250px;
-    background: rgba(60, 255, 210, 0.9);
+    background: linear-gradient(0deg,    rgba(60, 255, 210, 0.9), rgba(0, 212, 255, 0.9));
     display: flex;
     align-items: center;
     justify-content: center;
     z-index: -1;
 }
 
-.progect_content::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0px;
-    width: 100%;
-    height: 10px;
-    background: linear-gradient(transparent,rgba(0, 212, 255, 0.9));
-    transform-origin: bottom;
-    transform: skewX(45deg);
-    transition: .5s;
-    z-index: -1;
-}
-.progect_content::after{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100px;
-    height: 10px;
-    /* background-color: red; */
-    transform: translateY(-5px);
-    z-index: 3;
-    background: rgba(60, 255, 210, 0.11);
-
-}
 /* .project_card:hover .progect_content:before 
 {
     transform: translateY(-40px) skewX(45deg);
     filter: blur(5px);
     opacity: 0.5;
 } */
-.project_card:hover {
-    transform: translateY(-30px); /* Поднимаем карту на 10 пикселей */}
-.progect_content:hover::before{
-    height: 40px;
-    bottom: -40px;
-    filter: blur(5px);
-    opacity: 0.5;
-}
+/* .project_card:hover { */
+    /* transform: translateY(-30px); Поднимаем карту на 10 пикселей} */
+
 .project_card:nth-child(1) {
     z-index: 3;
 }
@@ -496,4 +468,60 @@ body {
     100% {
         transform: perspective(900px) rotateX(360deg) rotateY(360deg);
     }
+}
+
+.expl_cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 4rem;
+}
+/* .expl_cont img{
+
+} */
+.expl_block{
+    width: 600px;
+}
+.expl_block p{
+    color: #C5C6C7;
+}
+
+/*  */
+.contact{
+    width: 100%;
+    margin-top: 20px;
+    height: fit-content;
+    padding: .5rem 0rem;
+    background-color: #1F2833;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact_block{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:0 40px;
+}
+.contact_block p{
+    color: #C5C6C7;
+    font-size: 18px;
+    margin-right: 5px;
+}
+.contact_block ul{
+    position: relative;
+    display: flex;
+    gap: 15px;
+    list-style: none;
+    padding: 0;
+}
+.contact_block ul li a{
+    text-decoration: none;
+    color: #C5C6C7;
+}
+.fa-brands{
+    font-size: 20px;
+    color: #C5C6C7;
 }
