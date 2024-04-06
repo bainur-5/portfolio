@@ -1,342 +1,386 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Bainur portfolio</title>
-        <link rel="stylesheet" href="css/style.css">
-        <script src="https://kit.fontawesome.com/d3546979b3.js" crossorigin="anonymous"></script>
-        <link rel="icon" href="./img/logo.svg" type="image/svg+xml">
-
-    </head>
-    <body>
-        <main>
-            <section class="start_section">
-                <div class="start_title">
-                    <h1>Привет, меня зовут <span>Байнур</span></h1>
-                    <p>Я креативный <span>Web-разработчик</span> из Кыргызстана</p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bainur portfolio</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/d3546979b3.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="icon" href="./img/logo.svg" type="image/svg+xml" />
+  </head>
+  <body>
+    <main>
+      <section class="start_section">
+        <div class="start_title">
+          <h1>Привет, меня зовут <span>Байнур</span></h1>
+          <p>Я креативный <span>Web-разработчик</span> из Кыргызстана</p>
+        </div>
+        <div class="container_cube">
+          <div class="cube" id="cube">
+            <div class="face front"></div>
+            <div class="face back"></div>
+            <div class="face left"></div>
+            <div class="face right"></div>
+            <div class="face top"></div>
+            <div class="face bottom"></div>
+          </div>
+          <div class="shadow_cube"></div>
+        </div>
+      </section>
+      <section class="about_section">
+        <div class="about_title">
+          <h1>Обо мне</h1>
+          <p>
+            Я Fronted разработчик, который занимается веб-разработкой в
+            некотором качестве с 2021 года.
+          </p>
+          <p>
+            Моя мечта в разработке сделать свой ИИ, сделать галаграмму как у
+            Тони Старка (Marvel). Сейчас я зучаю three.js (3D Анимации)
+          </p>
+          <p>
+            С хорошим бэграундом в виде опыта коммерческой разработки
+            иностранных фин.тех проектов, в составе команды из 8 и более человек
+            с использованием Scrum/Agile/Jira
+          </p>
+        </div>
+      </section>
+      <section class="portfolio_section">
+        <div class="about_title">
+          <h1>Проекты</h1>
+          <div class="project_Container">
+            <a href="https://marvelmania.netlify.app/" class="link-site">
+              <div class="project_card">
+                <div class="progect_content">
+                  <div class="website_card website_card-1">
+                    <p>Marvel</p>
+                  </div>
                 </div>
-                <div class="container_cube">
-                    <div class="cube" id="cube">
-                        <div class="face front">
-                        </div>
-                        <div class="face back">
-                        </div>
-                        <div class="face left">
-                        </div>
-                        <div class="face right">
-                        </div>
-                        <div class="face top">
-                        </div>
-                        <div class="face bottom">
-                        </div>
+              </div>
+            </a>
+            <a
+              href="https://app.netlify.com/sites/mellow-kitsune-92ba1f/"
+              class="link-site"
+            >
+              <div class="project_card">
+                <div class="progect_content">
+                  <div class="website_card website_card-2">
+                    <p>FIN</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <div class="project_card">
+              <div class="progect_content">
+                <div class="website_card">
+                  <h1>ERROR 404</h1>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="my_skil">
+          <div class="about_title">
+            <h1>Мои скилы</h1>
+          </div>
+          <div class="my_subsequent_skills">
+            <div class="my_subsequent_skills_js">
+              <div class="cube_1skil cube_1skil_main">
+                <div class="face_1skil front_1skil front_1skil_img">
+                  <img src="./img/JavaScript-Logo.png" alt="js" />
+                </div>
+                <div class="face_1skil back_1skil"></div>
+                <div class="face_1skil left_1skil"></div>
+                <div class="face_1skil right_1skil"></div>
+                <div class="face_1skil top_1skil"></div>
+                <div class="face_1skil bottom_1skil"></div>
+              </div>
+              <div class="flex_skil">
+                <div class="grid_skil">
+                  <div class="cube_skil_container">
+                    <div class="cube_1skil line_left">
+                      <div class="face_1skil front_1skil front_skil_git_img">
+                        <img src="./img/GitHub-Logo.png" alt="js" />
+                      </div>
+                      <div class="face_1skil back_1skil"></div>
+                      <div class="face_1skil left_1skil"></div>
+                      <div class="face_1skil right_1skil"></div>
+                      <div class="face_1skil top_1skil"></div>
+                      <div class="face_1skil bottom_1skil"></div>
                     </div>
-                    <div class="shadow_cube"></div>
-                </div>
-            </section>
-            <section class="about_section">
-                <div class="about_title">
-                    <h1>Обо мне</h1>
-                    <p>Я Fronted разработчик, который занимается веб-разработкой
-                        в некотором качестве с 2021 года.</p>
-                    <p>Моя мечта в разработке сделать свой ИИ, сделать
-                        галаграмму как у Тони Старка (Marvel). Сейчас я зучаю
-                        three.js (3D Анимации)</p>
-                    <p> С хорошим бэграундом в виде опыта коммерческой
-                        разработки иностранных фин.тех проектов, в составе
-                        команды из 8 и более человек с использованием
-                        Scrum/Agile/Jira</p>
-                </div>
-            </section>
-            <section class="portfolio_section">
-                <div class="about_title">
-                    <h1>Проекты</h1>
-                    <div class="project_Container">
-                        <div class="project_card">
-                            <div class="progect_content">
-                                <div class="website_card">
-                                    <h1>ERROR 404</h1>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="project_card">
-                            <div class="progect_content">
-                                <div class="website_card">
-                                    <h1>ERROR 404</h1>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="project_card">
-                            <div class="progect_content">
-                                <div class="website_card">
-                                    <h1>ERROR 404</h1>
-                                </div>
-                            </div>
-                        </div>
+                    <p class="time_skil">GIT 2021 г</p>
+                  </div>
+                  <div class="cube_skil_container">
+                    <div class="cube_1skil line">
+                      <div class="face_1skil front_1skil front_skil_js_img">
+                        <img src="./img/React-icon.svg(1).png" alt="js" />
+                      </div>
+                      <div class="face_1skil back_1skil"></div>
+                      <div class="face_1skil left_1skil"></div>
+                      <div class="face_1skil right_1skil"></div>
+                      <div class="face_1skil top_1skil"></div>
+                      <div class="face_1skil bottom_1skil"></div>
                     </div>
-                </div>
-                <div class="expl_cont">
-                    <img src="./img/happy.png" alt="">
-                    <div class="expl_block">
-                        <p>Мой GitHub был удален и все проекты тоже. Я не смог востановить свои Проекты. Вывод имейте больше одного git акаунта чтобы был не потерять свои акаунты.</p>
+                    <p class="time_skil">React 2021 г</p>
+                  </div>
+                  <div class="cube_skil_container">
+                    <div class="cube_1skil line">
+                      <div class="face_1skil front_1skil front_skil_js_img">
+                        <img
+                          src="./img/Typescript_logo_2020.svg.png"
+                          alt="js"
+                        />
+                      </div>
+                      <div class="face_1skil back_1skil"></div>
+                      <div class="face_1skil left_1skil"></div>
+                      <div class="face_1skil right_1skil"></div>
+                      <div class="face_1skil top_1skil"></div>
+                      <div class="face_1skil bottom_1skil"></div>
                     </div>
+                    <p class="time_skil">TypeScript 2023 г</p>
+                  </div>
                 </div>
-                
-                <div class="my_skil">
-                    <div class="about_title">
-                        <h1>Мои скилы</h1>
+                <div class="grid_skil">
+                  <div class="cube_skil_container">
+                    <div class="cube_1skil line_right">
+                      <div
+                        class="face_1skil front_1skil front_skil_nod-fire_img"
+                      >
+                        <img src="./img/nodejs-logo.png" alt="js" />
+                      </div>
+                      <div class="face_1skil back_1skil"></div>
+                      <div class="face_1skil left_1skil"></div>
+                      <div class="face_1skil right_1skil"></div>
+                      <div class="face_1skil top_1skil"></div>
+                      <div class="face_1skil bottom_1skil"></div>
                     </div>
-                    <div class="my_subsequent_skills">
-                        <div class="my_subsequent_skills_js">
-                            <div class="cube_1skil cube_1skil_main">
-                                <div
-                                    class="face_1skil front_1skil front_1skil_img">
-                                    <img src="./img/JavaScript-Logo.png"
-                                        alt="js">
-                                </div>
-                                <div class="face_1skil back_1skil"></div>
-                                <div class="face_1skil left_1skil"></div>
-                                <div class="face_1skil right_1skil"></div>
-                                <div class="face_1skil top_1skil"></div>
-                                <div class="face_1skil bottom_1skil"></div>
-                            </div>
-                            <div class="flex_skil">
-                                <div class="grid_skil">
-                                    <div class="cube_skil_container">
-                                        <div class="cube_1skil line_left">
-                                            <div
-                                                class="face_1skil front_1skil front_skil_git_img">
-                                                <img
-                                                    src="./img/GitHub-Logo.png"
-                                                    alt="js">
-                                            </div>
-                                            <div class="face_1skil back_1skil"></div>
-                                            <div class="face_1skil left_1skil"></div>
-                                            <div class="face_1skil right_1skil"></div>
-                                            <div class="face_1skil top_1skil"></div>
-                                            <div class="face_1skil bottom_1skil"></div>
-                                        </div>
-                                        <p class="time_skil">GIT 2021 г</p>
-                                    </div>
-                                    <div class="cube_skil_container">
-                                        <div class="cube_1skil line">
-                                            <div
-                                                class="face_1skil front_1skil front_skil_js_img">
-                                                <img
-                                                    src="./img/React-icon.svg(1).png"
-                                                    alt="js">
-                                            </div>
-                                            <div class="face_1skil back_1skil"></div>
-                                            <div class="face_1skil left_1skil"></div>
-                                            <div class="face_1skil right_1skil"></div>
-                                            <div class="face_1skil top_1skil"></div>
-                                            <div class="face_1skil bottom_1skil"></div>
-                                        </div>
-                                        <p class="time_skil">React 2021 г</p>
-                                    </div>
-                                    <div class="cube_skil_container">
-                                        <div class="cube_1skil line">
-                                            <div
-                                                class="face_1skil front_1skil front_skil_js_img">
-                                                <img
-                                                    src="./img/Typescript_logo_2020.svg.png"
-                                                    alt="js">
-                                            </div>
-                                            <div class="face_1skil back_1skil"></div>
-                                            <div class="face_1skil left_1skil"></div>
-                                            <div class="face_1skil right_1skil"></div>
-                                            <div class="face_1skil top_1skil"></div>
-                                            <div class="face_1skil bottom_1skil"></div>
-                                        </div>
-                                        <p class="time_skil">TypeScript 2023 г</p>
-                                    </div>
-                                </div>
-                                <div class="grid_skil">
-                                    <div class="cube_skil_container">
-                                        <div class="cube_1skil line_right">
-                                            <div
-                                                class="face_1skil front_1skil front_skil_nod-fire_img">
-                                                <img src="./img/nodejs-logo.png"
-                                                    alt="js">
-                                            </div>
-                                            <div class="face_1skil back_1skil"></div>
-                                            <div class="face_1skil left_1skil"></div>
-                                            <div class="face_1skil right_1skil"></div>
-                                            <div class="face_1skil top_1skil"></div>
-                                            <div class="face_1skil bottom_1skil"></div>
-                                        </div>
-                                        <p class="time_skil">Node-js 2021 г</p>
-                                    </div>
-                                    <div class="cube_skil_container">
-                                        <div class="cube_1skil line">
-                                            <div
-                                                class="face_1skil front_1skil front_skil_nod-fire_img">
-                                                <img
-                                                    src="./img/firebase_logo.png"
-                                                    alt="js">
-                                            </div>
-                                            <div class="face_1skil back_1skil"></div>
-                                            <div class="face_1skil left_1skil"></div>
-                                            <div class="face_1skil right_1skil"></div>
-                                            <div class="face_1skil top_1skil"></div>
-                                            <div class="face_1skil bottom_1skil"></div>
-                                        </div>
-                                        <p class="time_skil">Firebase 2021 г</p>
-                                    </div>
-                                    <div class="cube_skil_container">
-                                        <div class="cube_1skil line">
-                                            <div
-                                                class="face_1skil front_1skil front_skil_js_img">
-                                                <img src="./img/antd_log.png"
-                                                    alt="js">
-                                            </div>
-                                            <div class="face_1skil back_1skil"></div>
-                                            <div class="face_1skil left_1skil"></div>
-                                            <div class="face_1skil right_1skil"></div>
-                                            <div class="face_1skil top_1skil"></div>
-                                            <div class="face_1skil bottom_1skil"></div>
-                                        </div>
-                                        <p class="time_skil">Antd 2023 г</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="my_subsequent_skills_css">
-                            <div class="cube_1skil cube_1skil_main">
-                                <div
-                                    class="face_1skil front_1skil front_2skil_img">
-                                    <img src="./img/css_logo.png" alt="js">
-                                </div>
-                                <div class="face_1skil back_1skil"></div>
-                                <div class="face_1skil left_1skil"></div>
-                                <div class="face_1skil right_1skil"></div>
-                                <div class="face_1skil top_1skil"></div>
-                                <div class="face_1skil bottom_1skil"></div>
-                            </div>
-                            <div class="flex_skil">
-                                <div class="grid_skil">
-                                    <div class="cube_skil_container">
-                                        <div class="cube_1skil line_left">
-                                            <div
-                                                class="face_1skil front_1skil front_skil_js_img">
-                                                <img
-                                                    src="./img/bootstrap-logo.png"
-                                                    alt="js">
-                                            </div>
-                                            <div class="face_1skil back_1skil"></div>
-                                            <div class="face_1skil left_1skil"></div>
-                                            <div class="face_1skil right_1skil"></div>
-                                            <div class="face_1skil top_1skil"></div>
-                                            <div class="face_1skil bottom_1skil"></div>
-                                        </div>
-                                        <p class="time_skil">Bootsrap 2021 г</p>
-                                    </div>
-                                    <div class="cube_skil_container">
-                                        <div class="cube_1skil line">
-                                            <div
-                                                class="face_1skil front_1skil front_skil_js_img">
-                                                <img
-                                                    src="./img/tailwind_logo.png"
-                                                    alt="js">
-                                            </div>
-                                            <div class="face_1skil back_1skil"></div>
-                                            <div class="face_1skil left_1skil"></div>
-                                            <div class="face_1skil right_1skil"></div>
-                                            <div class="face_1skil top_1skil"></div>
-                                            <div class="face_1skil bottom_1skil"></div>
-                                        </div>
-                                        <p class="time_skil">TailwindCSS 2023 г</p>
-                                    </div>
-
-                                </div>
-                                <div class="grid_skil">
-                                    <div class="cube_skil_container">
-                                        <div class="cube_1skil line_right">
-                                            <div
-                                                class="face_1skil front_1skil front_skil_js_img">
-                                                <img
-                                                    src="./img/sass-1-logo-png-transparent.png"
-                                                    alt="js">
-                                            </div>
-                                            <div class="face_1skil back_1skil"></div>
-                                            <div class="face_1skil left_1skil"></div>
-                                            <div class="face_1skil right_1skil"></div>
-                                            <div class="face_1skil top_1skil"></div>
-                                            <div class="face_1skil bottom_1skil"></div>
-                                        </div>
-                                        <p class="time_skil">Sass 2021 г</p>
-                                    </div>
-                                    <div class="cube_skil_container">
-                                        <div class="cube_1skil line">
-                                            <div
-                                                class="face_1skil front_1skil front_skil_fig_img">
-                                                <img
-                                                    src="./img/1667px-Figma-logo.svg.png"
-                                                    alt="js">
-                                            </div>
-                                            <div class="face_1skil back_1skil"></div>
-                                            <div class="face_1skil left_1skil"></div>
-                                            <div class="face_1skil right_1skil"></div>
-                                            <div class="face_1skil top_1skil"></div>
-                                            <div class="face_1skil bottom_1skil"></div>
-                                        </div>
-                                        <p class="time_skil">Figma 2021 г</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                        <div class="my_subsequent_skills_html">
-                            <div class="cube_1skil cube_1skil_main">
-                                <div
-                                    class="face_1skil front_1skil front_3skil_img">
-                                    <img src="./img/html_logo.png" alt="js">
-                                </div>
-                                <div class="face_1skil back_1skil"></div>
-                                <div class="face_1skil left_1skil"></div>
-                                <div class="face_1skil right_1skil"></div>
-                                <div class="face_1skil top_1skil"></div>
-                                <div class="face_1skil bottom_1skil"></div>
-                            </div>
-                            <div class="cube_skil_separt_container">
-                                <div class="cube_1skil">
-                                    <div
-                                        class="face_1skil front_1skil front_skil_js_img">
-                                        <img
-                                            src="./img/Three.js_Icon.svg.png"
-                                            alt="js">
-                                    </div>
-                                    <div class="face_1skil back_1skil"></div>
-                                    <div class="face_1skil left_1skil"></div>
-                                    <div class="face_1skil right_1skil"></div>
-                                    <div class="face_1skil top_1skil"></div>
-                                    <div class="face_1skil bottom_1skil"></div>
-                                </div>
-                                <p class="time_skil">Three.js изучаю 2023 г</p>
-                            </div>
-
-                        </div>
+                    <p class="time_skil">Node-js 2021 г</p>
+                  </div>
+                  <div class="cube_skil_container">
+                    <div class="cube_1skil line">
+                      <div
+                        class="face_1skil front_1skil front_skil_nod-fire_img"
+                      >
+                        <img src="./img/firebase_logo.png" alt="js" />
+                      </div>
+                      <div class="face_1skil back_1skil"></div>
+                      <div class="face_1skil left_1skil"></div>
+                      <div class="face_1skil right_1skil"></div>
+                      <div class="face_1skil top_1skil"></div>
+                      <div class="face_1skil bottom_1skil"></div>
                     </div>
+                    <p class="time_skil">Firebase 2021 г</p>
+                  </div>
+                  <div class="cube_skil_container">
+                    <div class="cube_1skil line">
+                      <div class="face_1skil front_1skil front_skil_js_img">
+                        <img src="./img/antd_log.png" alt="js" />
+                      </div>
+                      <div class="face_1skil back_1skil"></div>
+                      <div class="face_1skil left_1skil"></div>
+                      <div class="face_1skil right_1skil"></div>
+                      <div class="face_1skil top_1skil"></div>
+                      <div class="face_1skil bottom_1skil"></div>
+                    </div>
+                    <p class="time_skil">Antd 2023 г</p>
+                  </div>
                 </div>
-            </section>
-            <section class="contact">
-                <div class="contact_block">
-                    <p>Мои соцсети:</p>
-                    <ul>
-                        <li><a href="https://mailto:bainur05ab@gmail.com">bainur05ab@gmail.com</a></li>
-                    </ul>
+              </div>
+            </div>
+            <div class="my_subsequent_skills_css">
+              <div class="cube_1skil cube_1skil_main">
+                <div class="face_1skil front_1skil front_2skil_img">
+                  <img src="./img/css_logo.png" alt="js" />
                 </div>
-                <div class="contact_block">
-                    <p>Мои соцсети:</p>
-                    <ul>
-                        <li><a href="http://t.me/BainurAB"><i class="fa-brands fa-telegram"></i></a></li>
-                        <li><a href="https://github.com/bainur-5"><i class="fa-brands fa-github"></i></a></li>
-                        <li><a href="https://gitlab.com/bainur-5"><i class="fa-brands fa-gitlab"></i></a></li>
-                        <li><a href="http://www.linkedin.com/in/bainur-absamatov-836746280"><i class="fa-brands fa-linkedin-in"></i></a></li>
-                    </ul>
+                <div class="face_1skil back_1skil"></div>
+                <div class="face_1skil left_1skil"></div>
+                <div class="face_1skil right_1skil"></div>
+                <div class="face_1skil top_1skil"></div>
+                <div class="face_1skil bottom_1skil"></div>
+              </div>
+              <div class="flex_skil">
+                <div class="grid_skil">
+                  <div class="cube_skil_container">
+                    <div class="cube_1skil line_left">
+                      <div class="face_1skil front_1skil front_skil_js_img">
+                        <img src="./img/bootstrap-logo.png" alt="js" />
+                      </div>
+                      <div class="face_1skil back_1skil"></div>
+                      <div class="face_1skil left_1skil"></div>
+                      <div class="face_1skil right_1skil"></div>
+                      <div class="face_1skil top_1skil"></div>
+                      <div class="face_1skil bottom_1skil"></div>
+                    </div>
+                    <p class="time_skil">Bootsrap 2021 г</p>
+                  </div>
+                  <div class="cube_skil_container">
+                    <div class="cube_1skil line">
+                      <div class="face_1skil front_1skil front_skil_js_img">
+                        <img src="./img/tailwind_logo.png" alt="js" />
+                      </div>
+                      <div class="face_1skil back_1skil"></div>
+                      <div class="face_1skil left_1skil"></div>
+                      <div class="face_1skil right_1skil"></div>
+                      <div class="face_1skil top_1skil"></div>
+                      <div class="face_1skil bottom_1skil"></div>
+                    </div>
+                    <p class="time_skil">TailwindCSS 2023 г</p>
+                  </div>
                 </div>
-            </section>
-        </main>
-        <script src="js/script.js"></script>
-    </body>
+                <div class="grid_skil">
+                  <div class="cube_skil_container">
+                    <div class="cube_1skil line_right">
+                      <div class="face_1skil front_1skil front_skil_js_img">
+                        <img
+                          src="./img/sass-1-logo-png-transparent.png"
+                          alt="js"
+                        />
+                      </div>
+                      <div class="face_1skil back_1skil"></div>
+                      <div class="face_1skil left_1skil"></div>
+                      <div class="face_1skil right_1skil"></div>
+                      <div class="face_1skil top_1skil"></div>
+                      <div class="face_1skil bottom_1skil"></div>
+                    </div>
+                    <p class="time_skil">Sass 2021 г</p>
+                  </div>
+                  <div class="cube_skil_container">
+                    <div class="cube_1skil line">
+                      <div class="face_1skil front_1skil front_skil_fig_img">
+                        <img src="./img/1667px-Figma-logo.svg.png" alt="js" />
+                      </div>
+                      <div class="face_1skil back_1skil"></div>
+                      <div class="face_1skil left_1skil"></div>
+                      <div class="face_1skil right_1skil"></div>
+                      <div class="face_1skil top_1skil"></div>
+                      <div class="face_1skil bottom_1skil"></div>
+                    </div>
+                    <p class="time_skil">Figma 2021 г</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="my_subsequent_skills_html">
+              <div class="cube_1skil cube_1skil_main">
+                <div class="face_1skil front_1skil front_3skil_img">
+                  <img src="./img/html_logo.png" alt="js" />
+                </div>
+                <div class="face_1skil back_1skil"></div>
+                <div class="face_1skil left_1skil"></div>
+                <div class="face_1skil right_1skil"></div>
+                <div class="face_1skil top_1skil"></div>
+                <div class="face_1skil bottom_1skil"></div>
+              </div>
+              <div class="cube_skil_separt_container">
+                <div class="cube_1skil">
+                  <div class="face_1skil front_1skil front_skil_js_img">
+                    <img src="./img/Three.js_Icon.svg.png" alt="js" />
+                  </div>
+                  <div class="face_1skil back_1skil"></div>
+                  <div class="face_1skil left_1skil"></div>
+                  <div class="face_1skil right_1skil"></div>
+                  <div class="face_1skil top_1skil"></div>
+                  <div class="face_1skil bottom_1skil"></div>
+                </div>
+                <p class="time_skil">Three.js заинтересован</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about_title">
+          <h1>Опыт работы</h1>
+          <p>Devs Factory - июль 2023 - февраль 2024</p>
+          <br />
+          <ul class="list-expense">
+            <li>
+              <p>
+                Написал логику личного кабинета с возможностью редактирования
+                данных.
+              </p>
+            </li>
+            <li>
+              <p>Работал над генерацией документов.</p>
+            </li>
+            <li>
+              <p>Сделал регистрационую панель.</p>
+            </li>
+            <li>
+              <p>Работал над функциями публикации контента, такими как посты и статьи, включая возможности редактирования и удаления.</p>
+            </li>
+            <li>
+              <p>
+                Написал логику публикации редактирование и взаимодействие с ней.
+              </p>
+            </li>
+            <li>
+              <p>Разработка коммерческого проекта с нуля.</p>
+            </li>
+            <li>
+              <p>Работал в команде по методологии Agile Scrum.</p>
+            </li>
+            <li>
+              <p>
+                Участвовал в ежедневных стендапах, предоставлял ежедневные
+                отчёты.
+              </p>
+            </li>
+          </ul>
+          <br />
+          <p>Фриланс - настаяшяе время</p>
+          <br />
+          <ul class="list-expense">
+            <li>
+              <p>
+                Рабоатл над много страничной версткой.
+              </p>
+            </li>
+            <li>
+              <p>Дороботка и испровление сайтов.<p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="contact">
+        <div class="contact_block">
+          <p>Мои соцсети:</p>
+          <ul>
+            <li>
+              <a href="https://mailto:bainur05ab@gmail.com"
+                >bainur05ab@gmail.com</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="contact_block">
+          <p>Мои соцсети:</p>
+          <ul>
+            <li>
+              <a href="http://t.me/BainurAB"
+                ><i class="fa-brands fa-telegram"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://github.com/bainur-5"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://gitlab.com/bainur-5"
+                ><i class="fa-brands fa-gitlab"></i
+              ></a>
+            </li>
+            <li>
+              <a href="http://www.linkedin.com/in/bainur-absamatov-836746280"
+                ><i class="fa-brands fa-linkedin-in"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <script src="js/script.js"></script>
+  </body>
 </html>

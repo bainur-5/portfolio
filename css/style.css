@@ -360,9 +360,12 @@ body {
     flex-wrap: wrap;
     justify-content: space-between;
     transition: .5s;
-    transform: skewY(-2.5deg);
 }
-
+.link-site{
+    text-decoration: none;
+    color: none;
+    transition: .5s;
+}
 .project_card {
     position: relative;
     transform: perspective(1000px) rotate(-30deg) skew(25deg) translate(0,0);
@@ -424,18 +427,9 @@ body {
     justify-content: center;
     z-index: -1;
 }
-
-/* .project_card:hover .progect_content:before 
-{
-    transform: translateY(-40px) skewX(45deg);
-    filter: blur(5px);
-    opacity: 0.5;
-} */
-/* .project_card:hover { */
-    /* transform: translateY(-30px); Поднимаем карту на 10 пикселей} */
-
 .project_card:nth-child(1) {
     z-index: 3;
+    background: url('../img/site-imge/marvelSite.png') center/cover no-repeat;
 }
 
 .project_card:nth-child(2) {
@@ -446,7 +440,7 @@ body {
     z-index: 1;
 }
 .website_card{
-    width: 95%;
+    width: 170px;
     height: 200px;
     background-color: #C5C6C7;
     border-radius: 10px;
@@ -454,9 +448,35 @@ body {
     align-items: center;
     justify-content: center;
 }
+.website_card-1, .website_card-2, .website_card-3{
+    height: 250px;
+    border-radius: 0;
+    align-items: flex-start;
+}
+.website_card-1{
+    background: url('../img//site-imge/marvelSite.png') center/cover no-repeat;
+}
+
+.website_card-2{
+    background: url('../img//site-imge/FINSite.png') center/cover no-repeat;
+}
+.website_card img{
+    width: 100%;
+    height: 100%;
+}
 .progect_content h1 {
     color: #45A29E;
     font-size: 2rem;
+
+}
+.progect_content p {
+    color: #45A29E;
+    font-size: 2rem;
+    transition: .5s;
+
+}
+.link-site:hover p{
+    transform: rotateX(10deg) skewX(-45deg) translateY(-150px);
 
 }
 
@@ -523,5 +543,9 @@ body {
 }
 .fa-brands{
     font-size: 20px;
+    color: #C5C6C7;
+}
+/* opyt */
+.list-expense li{
     color: #C5C6C7;
 }
