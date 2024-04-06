@@ -15,6 +15,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
     padding: 2rem;
 
 }
@@ -242,6 +243,7 @@ body {
 .my_subsequent_skills {
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
     gap: 2rem;
 }
 
@@ -517,12 +519,14 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .contact_block{
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
     margin:0 40px;
 }
 .contact_block p{
