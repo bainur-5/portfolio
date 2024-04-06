@@ -22,6 +22,7 @@ body {
 
 .start_title {
     margin-bottom: 8rem;
+    width: 1000px;
 }
 
 .start_title h1 {
@@ -42,7 +43,7 @@ body {
 }
 
 .container_cube {
-    width: 500px;
+    width: 400px;
     display: flex;
     flex-direction: column;
     justify-content: center;
